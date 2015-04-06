@@ -1,0 +1,9 @@
+1) Вывод списка класса
+SELECT students.id, name_surname AS 'Фамилия Имя', name AS 'класс' 
+FROM students INNER JOIN class  
+ON class.id = students.class AND class.name = '7А';
+
+2) Изменение или добавление НОВЫХ СТРОК
+INSERT INTO class(id, name) 
+VALUES (15, '11c'), (14, '11b')
+ON DUPLICATE KEY UPDATE name = VALUES(name);
