@@ -22,3 +22,20 @@ id_student INTEGER,
 FOREIGN KEY(id_student) REFERENCES students(id)
 );
 
+INSERT INTO class(name) VALUES
+	('7А'),
+	('7Б'),
+	('7В'),
+	('8А'),
+	('8Б'),
+	('8В'),
+	('9А'),
+	('9Б'),
+	('9В'),
+	('10А'),
+	('10Б'),
+	('10В'),
+	('11А'),
+	('11Б'),
+	('11В');
+
