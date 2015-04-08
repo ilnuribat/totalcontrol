@@ -1,4 +1,5 @@
-﻿INSERT INTO students(name_surname, class) VALUES('Абдрахимов Тимур Фаритович', 1);
+﻿USE totalcontrol;
+INSERT INTO students(name_surname, class) VALUES('Абдрахимов Тимур Фаритович', 1);
 INSERT INTO students(name_surname, class) VALUES('Абдуллин Салават Ринатович', 1);
 INSERT INTO students(name_surname, class) VALUES('Батталов Руслан Рустемович', 1);
 INSERT INTO students(name_surname, class) VALUES('Гадельшин Амир Маратович', 1);
