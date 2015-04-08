@@ -7,8 +7,9 @@ var bodyParser = require('body-parser');
 var url = require('url');
 app.use(bodyParser.urlencoded());
 var mysql = require('mysql');
-var fileSystem = require('fs');
-var Url = require('url');
 var queryString = require('querystring');
 
 exports.app = app;
+exports.mysql = mysql;
+exports.url = url;
+exports.queryString = queryString;

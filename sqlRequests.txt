@@ -7,3 +7,6 @@ ON class.id = students.class AND class.name = '7А';
 INSERT INTO class(id, name) 
 VALUES (15, '11c'), (14, '11b')
 ON DUPLICATE KEY UPDATE name = VALUES(name);
+
+3) Вывести список классов
+SELECT id, name FROM class;
