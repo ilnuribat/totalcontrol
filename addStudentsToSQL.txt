@@ -1,316 +1,315 @@
-﻿USE totalcontrol;
-INSERT INTO students(name_surname, class) VALUES('Абдрахимов Тимур Фаритович', 1);
-INSERT INTO students(name_surname, class) VALUES('Абдуллин Салават Ринатович', 1);
-INSERT INTO students(name_surname, class) VALUES('Батталов Руслан Рустемович', 1);
-INSERT INTO students(name_surname, class) VALUES('Гадельшин Амир Маратович', 1);
-INSERT INTO students(name_surname, class) VALUES('Гатиатуллин Рашит Расулевич', 1);
-INSERT INTO students(name_surname, class) VALUES('Дияров Фидан Марсович', 1);
-INSERT INTO students(name_surname, class) VALUES('Ишмаев Искандер Рамитович', 1);
-INSERT INTO students(name_surname, class) VALUES('Ишмуратов Даян Салимович', 1);
-INSERT INTO students(name_surname, class) VALUES('Ишмухаметов Вильдан Газинурович', 1);
-INSERT INTO students(name_surname, class) VALUES('Каримов Вадим Амирович', 1);
-INSERT INTO students(name_surname, class) VALUES('Лукманов Искандар Валиевич', 1);
-INSERT INTO students(name_surname, class) VALUES('Мамбетов Фаруаз Самматович', 1);
-INSERT INTO students(name_surname, class) VALUES('Мурзакамалов Вильнур Гильманович', 1);
-INSERT INTO students(name_surname, class) VALUES('Мухаметдинов Чингизхан Рауфович', 1);
-INSERT INTO students(name_surname, class) VALUES('Сагитов Ильшат Илдусович', 1);
-INSERT INTO students(name_surname, class) VALUES('Тахаутдинов Артур Рустамович', 1);
-INSERT INTO students(name_surname, class) VALUES('Усманов Гаян Хабирович', 1);
-INSERT INTO students(name_surname, class) VALUES('Фаттахов Салават Радикович', 1);
-INSERT INTO students(name_surname, class) VALUES('Хакиев Габдулла  Фанисович', 1);
-INSERT INTO students(name_surname, class) VALUES('Хаков Виль Рафкатович', 1);
-INSERT INTO students(name_surname, class) VALUES('Хузин Айдар Ильдусович', 1);
-INSERT INTO students(name_surname, class) VALUES('Шакирьянов Шагит Булатович', 1);
-INSERT INTO students(name_surname, class) VALUES('Шарипов Айдар Вилевич', 1);
-INSERT INTO students(name_surname, class) VALUES('Шарипов Руслан Рафикович', 1);
-INSERT INTO students(name_surname, class) VALUES('Абдулгалимов Расим Радикович', 2);
-INSERT INTO students(name_surname, class) VALUES('Аскаров Арсен Русланович', 2);
-INSERT INTO students(name_surname, class) VALUES('Байзигитов Мансур Нурович', 2);
-INSERT INTO students(name_surname, class) VALUES('Батыргариев Александр Ильдарович', 2);
-INSERT INTO students(name_surname, class) VALUES('Бжиков Артур Рустамович', 2);
-INSERT INTO students(name_surname, class) VALUES('Габитов Айдар Алмасович', 2);
-INSERT INTO students(name_surname, class) VALUES('Габитов Алмаз Наилевич', 2);
-INSERT INTO students(name_surname, class) VALUES('Гайнанов Равиль Рафисович', 2);
-INSERT INTO students(name_surname, class) VALUES('Гиниатуллин Алмас Артурович', 2);
-INSERT INTO students(name_surname, class) VALUES('Закиров Тимур Уралович', 2);
-INSERT INTO students(name_surname, class) VALUES('Ишбердин Айрат Ильфатович', 2);
-INSERT INTO students(name_surname, class) VALUES('Кашапов Айвар Загирович', 2);
-INSERT INTO students(name_surname, class) VALUES('Курбатов Никита Александрович', 2);
-INSERT INTO students(name_surname, class) VALUES('Латыпов Марат Валитович', 2);
-INSERT INTO students(name_surname, class) VALUES('Махмутов Данил Наильевич', 2);
-INSERT INTO students(name_surname, class) VALUES('Муртазин Инзер Исламгулович', 2);
-INSERT INTO students(name_surname, class) VALUES('Муталлапов Айдар Нурович', 2);
-INSERT INTO students(name_surname, class) VALUES('Рамазанов Инсаф Алмазович', 2);
-INSERT INTO students(name_surname, class) VALUES('Саитгалин Мурат Русланович', 2);
-INSERT INTO students(name_surname, class) VALUES('Сафиуллин Булат Ринатович', 2);
-INSERT INTO students(name_surname, class) VALUES('Сиргалин Байназар Ражапович', 2);
-INSERT INTO students(name_surname, class) VALUES('Тайбугин Ирбулат Ильясович', 2);
-INSERT INTO students(name_surname, class) VALUES('Улиахметов Нурислам Идрисович', 2);
-INSERT INTO students(name_surname, class) VALUES('Усманов Наиль Халитович', 2);
-INSERT INTO students(name_surname, class) VALUES('Харрасов Султан Гамирович', 2);
-INSERT INTO students(name_surname, class) VALUES('Шаймарданов Нуриман Рамазанович', 2);
-INSERT INTO students(name_surname, class) VALUES('Шарипов Рушан Ришатович', 2);
-INSERT INTO students(name_surname, class) VALUES('Асадуллин Марс Александрович', 3);
-INSERT INTO students(name_surname, class) VALUES('Басыров Артур', 3);
-INSERT INTO students(name_surname, class) VALUES('Гарифуллин Ильдан Рустемович', 3);
-INSERT INTO students(name_surname, class) VALUES('Гафаров Роберт Азаматович', 3);
-INSERT INTO students(name_surname, class) VALUES('Давлетов Айбулат Рафисович', 3);
-INSERT INTO students(name_surname, class) VALUES('Жамалов Ислам Илшатович', 3);
-INSERT INTO students(name_surname, class) VALUES('Кадыргулов Вильдан Гильфанович', 3);
-INSERT INTO students(name_surname, class) VALUES('Кундышев Евгений Олегович', 3);
-INSERT INTO students(name_surname, class) VALUES('Набиуллин Булат Маратович', 3);
-INSERT INTO students(name_surname, class) VALUES('Насыров Винер Радикович', 3);
-INSERT INTO students(name_surname, class) VALUES('Расембетов Рушан Данисович', 3);
-INSERT INTO students(name_surname, class) VALUES('Рахимов Булат Ильдарович', 3);
-INSERT INTO students(name_surname, class) VALUES('Сафиуллин Раниль Расилович', 3);
-INSERT INTO students(name_surname, class) VALUES('Сапожников Александр Сергеевич', 3);
-INSERT INTO students(name_surname, class) VALUES('Хажиахметов Динислам Ильшатович', 3);
-INSERT INTO students(name_surname, class) VALUES('Хакимов Артур Русланович', 3);
-INSERT INTO students(name_surname, class) VALUES('Хакимов Роберт Шамилевич', 3);
-INSERT INTO students(name_surname, class) VALUES('Хаматдинов Рустам Табрисович', 3);
-INSERT INTO students(name_surname, class) VALUES('Хасанов Артем Артурович', 3);
-INSERT INTO students(name_surname, class) VALUES('Хусаинов Ильнур Булатович', 3);
-INSERT INTO students(name_surname, class) VALUES('Шакирьянов Тамерлан Альфредович', 3);
-INSERT INTO students(name_surname, class) VALUES('Шарафутдинов Ранис Рашитович', 3);
-INSERT INTO students(name_surname, class) VALUES('Юнусов Марат Ниязович', 3);
-INSERT INTO students(name_surname, class) VALUES('Абдуллин Закир', 4);
-INSERT INTO students(name_surname, class) VALUES('Аитбаев Азат', 4);
-INSERT INTO students(name_surname, class) VALUES('Асигулов Азат', 4);
-INSERT INTO students(name_surname, class) VALUES('Ахметов Инсаф', 4);
-INSERT INTO students(name_surname, class) VALUES('Ахтямов Денис', 4);
-INSERT INTO students(name_surname, class) VALUES('Бикбулатов Артур', 4);
-INSERT INTO students(name_surname, class) VALUES('Галлямов Мансур', 4);
-INSERT INTO students(name_surname, class) VALUES('Игебаев Булат', 4);
-INSERT INTO students(name_surname, class) VALUES('Имельбаев Азат', 4);
-INSERT INTO students(name_surname, class) VALUES('Маннанов Тимур', 4);
-INSERT INTO students(name_surname, class) VALUES('Мустафин Фидан', 4);
-INSERT INTO students(name_surname, class) VALUES('Нигаматов Гайсар', 4);
-INSERT INTO students(name_surname, class) VALUES('Салаватов Айдар', 4);
-INSERT INTO students(name_surname, class) VALUES('Сукбаев Динар', 4);
-INSERT INTO students(name_surname, class) VALUES('Уметбаев Аяз', 4);
-INSERT INTO students(name_surname, class) VALUES('Уразметов Мидхат', 4);
-INSERT INTO students(name_surname, class) VALUES('Фассахов Ильнар', 4);
-INSERT INTO students(name_surname, class) VALUES('Фаузетдинов Ильнар', 4);
-INSERT INTO students(name_surname, class) VALUES('Хужахметов Арсланбек', 4);
-INSERT INTO students(name_surname, class) VALUES('Хуснияров Айдар', 4);
-INSERT INTO students(name_surname, class) VALUES('Юлчурин Айдар', 4);
-INSERT INTO students(name_surname, class) VALUES('Альмухаметов Динар', 5);
-INSERT INTO students(name_surname, class) VALUES('Атангулов Дим', 5);
-INSERT INTO students(name_surname, class) VALUES('Биктимиров Урал', 5);
-INSERT INTO students(name_surname, class) VALUES('Вагапов Ильнар', 5);
-INSERT INTO students(name_surname, class) VALUES('Васильев Артур', 5);
-INSERT INTO students(name_surname, class) VALUES('Гатиятуллин Альгис', 5);
-INSERT INTO students(name_surname, class) VALUES('Гибадатов Руслан', 5);
-INSERT INTO students(name_surname, class) VALUES('Гумеров Айгиз', 5);
-INSERT INTO students(name_surname, class) VALUES('Гумеров Гайса', 5);
-INSERT INTO students(name_surname, class) VALUES('Казбаков Селим', 5);
-INSERT INTO students(name_surname, class) VALUES('Кидрасов Ильдар', 5);
-INSERT INTO students(name_surname, class) VALUES('Мидатов Нургиз', 5);
-INSERT INTO students(name_surname, class) VALUES('Минасов Искандар', 5);
-INSERT INTO students(name_surname, class) VALUES('Нигматуллин Марсель', 5);
-INSERT INTO students(name_surname, class) VALUES('Сабитов Нурлан', 5);
-INSERT INTO students(name_surname, class) VALUES('Савенко Кирилл', 5);
-INSERT INTO students(name_surname, class) VALUES('Саитов Азат', 5);
-INSERT INTO students(name_surname, class) VALUES('Салихов Арслан', 5);
-INSERT INTO students(name_surname, class) VALUES('Тляубердин Агзам', 5);
-INSERT INTO students(name_surname, class) VALUES('Уразгулов Азамат', 5);
-INSERT INTO students(name_surname, class) VALUES('Фазлыев Руслан', 5);
-INSERT INTO students(name_surname, class) VALUES('Хазиханов Вильдан', 5);
-INSERT INTO students(name_surname, class) VALUES('Юнусов Салават', 5);
-INSERT INTO students(name_surname, class) VALUES('Якупов Галинур', 5);
-INSERT INTO students(name_surname, class) VALUES('Абдуллин Камил', 6);
-INSERT INTO students(name_surname, class) VALUES('Аубакиров Алсын', 6);
-INSERT INTO students(name_surname, class) VALUES('Байков Аяз', 6);
-INSERT INTO students(name_surname, class) VALUES('Габдрахманов Булат', 6);
-INSERT INTO students(name_surname, class) VALUES('Гайсаров Ильяс', 6);
-INSERT INTO students(name_surname, class) VALUES('Закарин Тимур', 6);
-INSERT INTO students(name_surname, class) VALUES('Зарипов Чингиз', 6);
-INSERT INTO students(name_surname, class) VALUES('Ишбаев Идель', 6);
-INSERT INTO students(name_surname, class) VALUES('Ишмухаметов Тимур', 6);
-INSERT INTO students(name_surname, class) VALUES('Каипов Идель', 6);
-INSERT INTO students(name_surname, class) VALUES('Лукманов Айрат', 6);
-INSERT INTO students(name_surname, class) VALUES('Махмутов Айнур', 6);
-INSERT INTO students(name_surname, class) VALUES('Муратов Ильдар', 6);
-INSERT INTO students(name_surname, class) VALUES('Нагимов Ильгизар', 6);
-INSERT INTO students(name_surname, class) VALUES('Насырьянов Альберт', 6);
-INSERT INTO students(name_surname, class) VALUES('Рамазанов Руслан', 6);
-INSERT INTO students(name_surname, class) VALUES('Сирбаев Вильдан', 6);
-INSERT INTO students(name_surname, class) VALUES('Султанов Афзал', 6);
-INSERT INTO students(name_surname, class) VALUES('Ураков Ильсур', 6);
-INSERT INTO students(name_surname, class) VALUES('Халилов Чингизхан', 6);
-INSERT INTO students(name_surname, class) VALUES('Худайгулов Азамат', 6);
-INSERT INTO students(name_surname, class) VALUES('Шакиров Ильяс', 6);
-INSERT INTO students(name_surname, class) VALUES('Яганшин Ильназ', 6);
-INSERT INTO students(name_surname, class) VALUES('Аглиуллин Айгиз', 7);
-INSERT INTO students(name_surname, class) VALUES('Валиев Радмир', 7);
-INSERT INTO students(name_surname, class) VALUES('Вильданов Замир', 7);
-INSERT INTO students(name_surname, class) VALUES('Гайсин Дамир', 7);
-INSERT INTO students(name_surname, class) VALUES('Гарелкин Иван', 7);
-INSERT INTO students(name_surname, class) VALUES('Гафаров Рафаэл', 7);
-INSERT INTO students(name_surname, class) VALUES('Каримов Нурлан', 7);
-INSERT INTO students(name_surname, class) VALUES('Лукманов Радмир', 7);
-INSERT INTO students(name_surname, class) VALUES('Мулюков Радмир', 7);
-INSERT INTO students(name_surname, class) VALUES('Назаров Булат', 7);
-INSERT INTO students(name_surname, class) VALUES('Нуриев Идель', 7);
-INSERT INTO students(name_surname, class) VALUES('Ризванов Рафаэль', 7);
-INSERT INTO students(name_surname, class) VALUES('Сафаров Тимур', 7);
-INSERT INTO students(name_surname, class) VALUES('Фарвазов Ленар', 7);
-INSERT INTO students(name_surname, class) VALUES('Хажиев Максим', 7);
-INSERT INTO students(name_surname, class) VALUES('Харисов Дим', 7);
-INSERT INTO students(name_surname, class) VALUES('Шарафутдинов Денис', 7);
-INSERT INTO students(name_surname, class) VALUES('Шагизиганов Урал', 7);
-INSERT INTO students(name_surname, class) VALUES('Абуталипов Айрат', 8);
-INSERT INTO students(name_surname, class) VALUES('Ахмадеев Айсуак', 8);
-INSERT INTO students(name_surname, class) VALUES('Ахметшин Газизьян', 8);
-INSERT INTO students(name_surname, class) VALUES('Габидуллин Ильдус', 8);
-INSERT INTO students(name_surname, class) VALUES('Галиахметов Денислам', 8);
-INSERT INTO students(name_surname, class) VALUES('Давлетшин Айназ', 8);
-INSERT INTO students(name_surname, class) VALUES('Зиянбаев Айса', 8);
-INSERT INTO students(name_surname, class) VALUES('Исхаков Аяз', 8);
-INSERT INTO students(name_surname, class) VALUES('Мамбетов Азат', 8);
-INSERT INTO students(name_surname, class) VALUES('Мустаев Чингиз', 8);
-INSERT INTO students(name_surname, class) VALUES('Надыргулов Сынгиз', 8);
-INSERT INTO students(name_surname, class) VALUES('Сагинбаев Артур', 8);
-INSERT INTO students(name_surname, class) VALUES('Сафин Вильдан', 8);
-INSERT INTO students(name_surname, class) VALUES('Тагиров Айбулат', 8);
-INSERT INTO students(name_surname, class) VALUES('Узбеков Шамиль', 8);
-INSERT INTO students(name_surname, class) VALUES('Усманов Нургиз', 8);
-INSERT INTO students(name_surname, class) VALUES('Хамидов Мурад', 8);
-INSERT INTO students(name_surname, class) VALUES('Хисаметдинов Руслан', 8);
-INSERT INTO students(name_surname, class) VALUES('Худайгулов Азат', 8);
-INSERT INTO students(name_surname, class) VALUES('Юлдыбаев Аскар', 8);
-INSERT INTO students(name_surname, class) VALUES('Абдуллин Искандер', 9);
-INSERT INTO students(name_surname, class) VALUES('Аллаяров Гаян', 9);
-INSERT INTO students(name_surname, class) VALUES('Баязитов Ильяс', 9);
-INSERT INTO students(name_surname, class) VALUES('Валитов Азамат', 9);
-INSERT INTO students(name_surname, class) VALUES('Габитов Айнур', 9);
-INSERT INTO students(name_surname, class) VALUES('Ильясов Дим', 9);
-INSERT INTO students(name_surname, class) VALUES('Ишбулатов Газиз', 9);
-INSERT INTO students(name_surname, class) VALUES('Ишниязов Ренат', 9);
-INSERT INTO students(name_surname, class) VALUES('Камалетдинов Гаяз', 9);
-INSERT INTO students(name_surname, class) VALUES('Маликов Ильдар', 9);
-INSERT INTO students(name_surname, class) VALUES('Мирасов Ямиль', 9);
-INSERT INTO students(name_surname, class) VALUES('Муратов Зульфат', 9);
-INSERT INTO students(name_surname, class) VALUES('Сайфуллин Айдар', 9);
-INSERT INTO students(name_surname, class) VALUES('Ситдиков Рамазан', 9);
-INSERT INTO students(name_surname, class) VALUES('Сулейманов Айбулат', 9);
-INSERT INTO students(name_surname, class) VALUES('Сынбулатов Азамат', 9);
-INSERT INTO students(name_surname, class) VALUES('Хайруллин Вадим', 9);
-INSERT INTO students(name_surname, class) VALUES('Халимов Айдар', 9);
-INSERT INTO students(name_surname, class) VALUES('Хусаинов Арслан', 9);
-INSERT INTO students(name_surname, class) VALUES('Янтурин Нур', 9);
-INSERT INTO students(name_surname, class) VALUES('Аккужин Филипп', 10);
-INSERT INTO students(name_surname, class) VALUES('Ахметгараев Ридаль', 10);
-INSERT INTO students(name_surname, class) VALUES('Галлямов Айнур', 10);
-INSERT INTO students(name_surname, class) VALUES('Гарипов Азамат', 10);
-INSERT INTO students(name_surname, class) VALUES('Гильметдинов Ильнур', 10);
-INSERT INTO students(name_surname, class) VALUES('Зарипов Ильмир', 10);
-INSERT INTO students(name_surname, class) VALUES('Игликов Аскар', 10);
-INSERT INTO students(name_surname, class) VALUES('Исхаков Ильгизар', 10);
-INSERT INTO students(name_surname, class) VALUES('Ишмухаметов Ильнур', 10);
-INSERT INTO students(name_surname, class) VALUES('Камалов Азат', 10);
-INSERT INTO students(name_surname, class) VALUES('Канчурин Вильнур', 10);
-INSERT INTO students(name_surname, class) VALUES('Каримгулов Альберт', 10);
-INSERT INTO students(name_surname, class) VALUES('Кусарин Эмиль', 10);
-INSERT INTO students(name_surname, class) VALUES('Кучугулов Салават', 10);
-INSERT INTO students(name_surname, class) VALUES('Назаров Вильдан', 10);
-INSERT INTO students(name_surname, class) VALUES('Рафиков Салимьян', 10);
-INSERT INTO students(name_surname, class) VALUES('Харрасов Зиннур', 10);
-INSERT INTO students(name_surname, class) VALUES('Шагивалеев Ришат', 10);
-INSERT INTO students(name_surname, class) VALUES('Шарафутдинов Идель', 10);
-INSERT INTO students(name_surname, class) VALUES('Юнусов Расуль', 10);
-INSERT INTO students(name_surname, class) VALUES('Аллабердин Ралиф Раилович', 11);
-INSERT INTO students(name_surname, class) VALUES('Аслыев Инсаф Ильшатович', 11);
-INSERT INTO students(name_surname, class) VALUES('Байбулатов Айнур Ильнурович', 11);
-INSERT INTO students(name_surname, class) VALUES('Басыров Айназ Нажипович', 11);
-INSERT INTO students(name_surname, class) VALUES('Буляков Нур Зуфарович', 11);
-INSERT INTO students(name_surname, class) VALUES('Валитов Айрат Мирсаяфович', 11);
-INSERT INTO students(name_surname, class) VALUES('Габитов Булат Наилевич', 11);
-INSERT INTO students(name_surname, class) VALUES('Давлетбердин Ялиль Умутбаевич', 11);
-INSERT INTO students(name_surname, class) VALUES('Зайнуллин Чингиз Ямилевич', 11);
-INSERT INTO students(name_surname, class) VALUES('Закиров Айдар Альфридович', 11);
-INSERT INTO students(name_surname, class) VALUES('Ибрагимов Ильяс Римович', 11);
-INSERT INTO students(name_surname, class) VALUES('Ишкулов Денис Хадисович', 11);
-INSERT INTO students(name_surname, class) VALUES('Кадыров Амир Ильдарович', 11);
-INSERT INTO students(name_surname, class) VALUES('Мамбетов Радмир Нурисович', 11);
-INSERT INTO students(name_surname, class) VALUES('Мулюков Халиль Азатович', 11);
-INSERT INTO students(name_surname, class) VALUES('Мусаргалин Азат Салаватович', 11);
-INSERT INTO students(name_surname, class) VALUES('Мухамадиев Ильгиз Азатович', 11);
-INSERT INTO students(name_surname, class) VALUES('Сафиев Ильяс Филюсович', 11);
-INSERT INTO students(name_surname, class) VALUES('Сафин Ильдар Наилевич', 11);
-INSERT INTO students(name_surname, class) VALUES('Умергалин Рузиль Рустамович', 11);
-INSERT INTO students(name_surname, class) VALUES('Шарипов Рустам Фаритович', 11);
-INSERT INTO students(name_surname, class) VALUES('Янбаев Ильсур Ильфатович', 11);
-INSERT INTO students(name_surname, class) VALUES('Абубакиров Шамиль', 12);
-INSERT INTO students(name_surname, class) VALUES('Аднасурин Ринат', 12);
-INSERT INTO students(name_surname, class) VALUES('Амантаев Вильдан', 12);
-INSERT INTO students(name_surname, class) VALUES('Багаутдинов Анвар', 12);
-INSERT INTO students(name_surname, class) VALUES('Батыршин Байрас', 12);
-INSERT INTO students(name_surname, class) VALUES('Буранбаев Тимур', 12);
-INSERT INTO students(name_surname, class) VALUES('Бухарбаев Шагит', 12);
-INSERT INTO students(name_surname, class) VALUES('Гайфуллин Ильдар', 12);
-INSERT INTO students(name_surname, class) VALUES('Гайфуллин Рафис', 12);
-INSERT INTO students(name_surname, class) VALUES('Гизтдинов Данил', 12);
-INSERT INTO students(name_surname, class) VALUES('Гильманов Ильшат', 12);
-INSERT INTO students(name_surname, class) VALUES('Кравцов Растимир', 12);
-INSERT INTO students(name_surname, class) VALUES('Максутов Зиннат', 12);
-INSERT INTO students(name_surname, class) VALUES('Мирзаев Камран', 12);
-INSERT INTO students(name_surname, class) VALUES('Рустанов Айгиз', 12);
-INSERT INTO students(name_surname, class) VALUES('Сагитов Тагир', 12);
-INSERT INTO students(name_surname, class) VALUES('Сынгизов Расим', 12);
-INSERT INTO students(name_surname, class) VALUES('Талхин Азамат', 12);
-INSERT INTO students(name_surname, class) VALUES('Фаизов Ринат', 12);
-INSERT INTO students(name_surname, class) VALUES('Ягудин Асгат', 12);
-INSERT INTO students(name_surname, class) VALUES('Адельгужин Азамат Салаватович', 13);
-INSERT INTO students(name_surname, class) VALUES('Афлятунов Идель Ишмурзович', 13);
-INSERT INTO students(name_surname, class) VALUES('Байчурин Фаяз Ильгизович', 13);
-INSERT INTO students(name_surname, class) VALUES('Буранбаев Рамазан Мидкатович', 13);
-INSERT INTO students(name_surname, class) VALUES('Габдуллин Нияз Илнурович', 13);
-INSERT INTO students(name_surname, class) VALUES('Давлеткужин Ильсур Газизович', 13);
-INSERT INTO students(name_surname, class) VALUES('Идрисов Идель Фаилович', 13);
-INSERT INTO students(name_surname, class) VALUES('Каримов Раиль Раитович', 13);
-INSERT INTO students(name_surname, class) VALUES('Махатов Ильнур Фларисович', 13);
-INSERT INTO students(name_surname, class) VALUES('Мигранов Ильнар Радикович', 13);
-INSERT INTO students(name_surname, class) VALUES('Мугтасимов Ринат Рифович', 13);
-INSERT INTO students(name_surname, class) VALUES('Мутагиров Рустем Айратович', 13);
-INSERT INTO students(name_surname, class) VALUES('Насипов Рамиль Камалович', 13);
-INSERT INTO students(name_surname, class) VALUES('Нуриманов Денис Гаязович', 13);
-INSERT INTO students(name_surname, class) VALUES('Сафин Чингиз Ильшатович', 13);
-INSERT INTO students(name_surname, class) VALUES('Хажиев Тимур Айсуатович', 13);
-INSERT INTO students(name_surname, class) VALUES('Шигапов Радмир Римович', 13);
-INSERT INTO students(name_surname, class) VALUES('Якупов  Айбулат Уралович', 13);
-INSERT INTO students(name_surname, class) VALUES('Абдуллин Ильмир Салихович', 14);
-INSERT INTO students(name_surname, class) VALUES('Адигамов Айгиз Азаматович', 14);
-INSERT INTO students(name_surname, class) VALUES('Ахмедьяров Азамат', 14);
-INSERT INTO students(name_surname, class) VALUES('Галин Ильназ', 14);
-INSERT INTO students(name_surname, class) VALUES('Искужин Шафкат Маратович', 14);
-INSERT INTO students(name_surname, class) VALUES('Каипов Айтуган Абрикович', 14);
-INSERT INTO students(name_surname, class) VALUES('Каримов Денис', 14);
-INSERT INTO students(name_surname, class) VALUES('Кучемханов Батырша', 14);
-INSERT INTO students(name_surname, class) VALUES('Муратшин Ильмир Ильшатович', 14);
-INSERT INTO students(name_surname, class) VALUES('Хамидуллин Раушан', 14);
-INSERT INTO students(name_surname, class) VALUES('Шарипов Анвар Айратович', 14);
-INSERT INTO students(name_surname, class) VALUES('Шугаипов Шамиль Данилевич', 14);
-INSERT INTO students(name_surname, class) VALUES('Юлдыбаев Ильнур Рахимьянович', 14);
-INSERT INTO students(name_surname, class) VALUES('Яхин Вадим Ильфатович', 14);
-INSERT INTO students(name_surname, class) VALUES('Насиров Айтуган Зуфарович', 14);
-INSERT INTO students(name_surname, class) VALUES('Сальтяшев Рамай Рауфович', 14);
-INSERT INTO students(name_surname, class) VALUES('Николаев Денис Анатольевич', 14);
-INSERT INTO students(name_surname, class) VALUES('Мухаметьянов Айнур Айдарович', 14);
-INSERT INTO students(name_surname, class) VALUES('Каримов Динислам Нурисламович', 14);
-INSERT INTO students(name_surname, class) VALUES('Арсланов Тимур', 15);
-INSERT INTO students(name_surname, class) VALUES('Ахметшин Ильяс', 15);
-INSERT INTO students(name_surname, class) VALUES('Баймурзин Идель', 15);
-INSERT INTO students(name_surname, class) VALUES('Басыров Расуль', 15);
-INSERT INTO students(name_surname, class) VALUES('Валитов Ильдар', 15);
-INSERT INTO students(name_surname, class) VALUES('Гадельшин Руслан', 15);
-INSERT INTO students(name_surname, class) VALUES('Давлетчурин Айнур', 15);
-INSERT INTO students(name_surname, class) VALUES('Ермолаев Роберт', 15);
-INSERT INTO students(name_surname, class) VALUES('Зайнуллин Загир', 15);
-INSERT INTO students(name_surname, class) VALUES('Кулуев Рафаэль', 15);
-INSERT INTO students(name_surname, class) VALUES('Мустафин Ильмир', 15);
-INSERT INTO students(name_surname, class) VALUES('Мухамадиев Ильнур', 15);
-INSERT INTO students(name_surname, class) VALUES('Мухамедьянов Азамат', 15);
-INSERT INTO students(name_surname, class) VALUES('Хидиятов Надир', 15);
-INSERT INTO students(name_surname, class) VALUES('Хилажев Алик', 15);
-INSERT INTO students(name_surname, class) VALUES('Шибанов Никита', 15);
+﻿INSERT INTO students(name_surname, room, class) VALUES
+('Абдрахимов Тимур Фаритович', 526, 1),
+('Абдуллин Салават Ринатович', 501, 1),
+('Батталов Руслан Рустемович', 530, 1),
+('Гадельшин Амир Маратович', 504, 1),
+('Гатиатуллин Рашит Расулевич', 527, 1),
+('Дияров Фидан Марсович', 530, 1),
+('Ишмаев Искандер Рамитович', 502, 1),
+('Ишмуратов Даян Салимович', 501, 1),
+('Ишмухаметов Вильдан Газинурович', 526, 1),
+('Каримов Вадим Амирович', 503, 1),
+('Лукманов Искандар Валиевич', 527, 1),
+('Мамбетов Фаруаз Самматович', 529, 1),
+('Мурзакамалов Вильнур Гильманович', 529, 1),
+('Мухаметдинов Чингизхан Рауфович', 504, 1),
+('Сагитов Ильшат Илдусович', 529, 1),
+('Тахаутдинов Артур Рустамович', 531, 1),
+('Усманов Гаян Хабирович', 501, 1),
+('Фаттахов Салават Радикович', 527, 1),
+('Хакиев Габдулла  Фанисович', 530, 1),
+('Хаков Виль Рафкатович', 503, 1),
+('Хузин Айдар Ильдусович', 531, 1),
+('Шакирьянов Шагит Булатович', 504, 1),
+('Шарипов Айдар Вилевич', 526, 1),
+('Шарипов Руслан Рафикович', 502, 1),
+('Абдулгалимов Расим Радикович', 0, 2),
+('Аскаров Арсен Русланович', 0, 2),
+('Байзигитов Мансур Нурович', 507, 2),
+('Батыргариев Александр Ильдарович', 0, 2),
+('Бжиков Артур Рустамович', 512, 2),
+('Габитов Айдар Алмасович', 0, 2),
+('Габитов Алмаз Наилевич', 509, 2),
+('Гайнанов Равиль Рафисович', 511, 2),
+('Гиниатуллин Алмас Артурович', 0, 2),
+('Закиров Тимур Уралович', 507, 2),
+('Ишбердин Айрат Ильфатович', 511, 2),
+('Кашапов Айвар Загирович', 505, 2),
+('Курбатов Никита Александрович', 506, 2),
+('Латыпов Марат Валитович', 509, 2),
+('Махмутов Данил Наильевич', 506, 2),
+('Муртазин Инзер Исламгулович', 510, 2),
+('Муталлапов Айдар Нурович', 505, 2),
+('Рамазанов Инсаф Алмазович', 509, 2),
+('Саитгалин Мурат Русланович', 0, 2),
+('Сафиуллин Булат Ринатович', 0, 2),
+('Сиргалин Байназар Ражапович', 514, 2),
+('Тайбугин Ирбулат Ильясович', 510, 2),
+('Улиахметов Нурислам Идрисович', 510, 2),
+('Усманов Наиль Халитович', 0, 2),
+('Харрасов Султан Гамирович', 514, 2),
+('Шаймарданов Нуриман Рамазанович', 0, 2),
+('Шарипов Рушан Ришатович', 514, 2),
+('Абраров Данир Рустемович', 0, 3),
+('Басыров Артур', 522, 3),
+('Гарифуллин Ильдан Рустемович', 520, 3),
+('Гафаров Роберт Азаматович', 523, 3),
+('Давлетов Айбулат Рафисович', 525, 3),
+('Жамалов Ислам Илшатович', 522, 3),
+('Кадыргулов Вильдан Гильфанович', 525, 3),
+('Кундышев Евгений Олегович', 517, 3),
+('Набиуллин Булат Маратович', 521, 3),
+('Насыров Винер Радикович', 519, 3),
+('Расембетов Рушан Данисович', 516, 3),
+('Рахимов Булат Ильдарович', 515, 3),
+('Сафиуллин Раниль Расилович', 515, 3),
+('Сапожников Александр Сергеевич', 520, 3),
+('Хажиахметов Динислам Ильшатович', 516, 3),
+('Хакимов Артур Русланович', 521, 3),
+('Хакимов Роберт Шамилевич', 518, 3),
+('Хаматдинов Рустам Табрисович', 520, 3),
+('Хасанов Артем Артурович', 523, 3),
+('Хусаинов Ильнур Булатович', 516, 3),
+('Шакирьянов Тамерлан Альфредович', 518, 3),
+('Шарафутдинов Ранис Рашитович', 521, 3),
+('Юнусов Марат Ниязович', 519, 3),
+('Абдуллин Закир', 309, 4),
+('Аитбаев Азат', 316, 4),
+('Асигулов Азат', 302, 4),
+('Ахметов Инсаф', 305, 4),
+('Ахтямов Денис', 332, 4),
+('Бикбулатов Артур', 304, 4),
+('Галлямов Мансур', 305, 4),
+('Игебаев Булат', -1, 4),
+('Имельбаев Азат', 304, 4),
+('Маннанов Тимур', 331, 4),
+('Мустафин Фидан', 332, 4),
+('Нигаматов Гайсар', 304, 4),
+('Салаватов Айдар', 305, 4),
+('Сукбаев Динар', 309, 4),
+('Уметбаев Аяз', 303, 4),
+('Уразметов Мидхат', 331, 4),
+('Фассахов Ильнар', 309, 4),
+('Фаузетдинов Ильнар', 303, 4),
+('Хужахметов Арсланбек', 331, 4),
+('Хуснияров Айдар', -1, 4),
+('Юлчурин Айдар', 302, 4),
+('Альмухаметов Динар', 329, 5),
+('Атангулов Дим', 328, 5),
+('Биктимиров Урал', 311, 5),
+('Вагапов Ильнар', 330, 5),
+('Васильев Артур', 306, 5),
+('Гатиятуллин Альгис', 329, 5),
+('Гибадатов Руслан', 330, 5),
+('Гумеров Айгиз', 322, 5),
+('Гумеров Гайса', 311, 5),
+('Казбаков Селим', 312, 5),
+('Кидрасов Ильдар', 307, 5),
+('Мидатов Нургиз', 328, 5),
+('Минасов Искандар', 328, 5),
+('Нигматуллин Марсель', 312, 5),
+('Сабитов Нурлан', 313, 5),
+('Саитов Азат', 313, 5),
+('Салихов Арслан', 311, 5),
+('Тляубердин Агзам', 312, 5),
+('Уразгулов Азамат', 322, 5),
+('Фазлыев Руслан', 307, 5),
+('Хазиханов Вильдан', 313, 5),
+('Юнусов Салават', 329, 5),
+('Якупов Галинур', 306, 5),
+('Абдуллин Камил', 317, 6),
+('Аубакиров Алсын', 323, 6),
+('Байков Аяз', 314, 6),
+('Габдрахманов Булат', 317, 6),
+('Гайсаров Ильяс', -1, 6),
+('Закарин Тимур', 314, 6),
+('Зарипов Чингиз', 325, 6),
+('Ишбаев Идель', 319, 6),
+('Ишмухаметов Тимур', 320, 6),
+('Каипов Идель', 317, 6),
+('Лукманов Айрат', 318, 6),
+('Махмутов Айнур', 320, 6),
+('Муратов Ильдар', 325, 6),
+('Нагимов Ильгизар', 323, 6),
+('Насырьянов Альберт', 314, 6),
+('Рамазанов Руслан', 319, 6),
+('Сирбаев Вильдан', 325, 6),
+('Султанов Афзал', 321, 6),
+('Ураков Ильсур', 321, 6),
+('Халилов Чингизхан', 318, 6),
+('Худайгулов Азамат', 315, 6),
+('Шакиров Ильяс', 321, 6),
+('Яганшин Ильназ', 315, 6),
+('Аглиуллин Айгиз', 405, 7),
+('Валиев Радмир', 401, 7),
+('Вильданов Замир', 407, 7),
+('Гайсин Дамир', 407, 7),
+('Гарелкин Иван', 404, 7),
+('Гафаров Рафаэл', 404, 7),
+('Каримов Нурлан', -1, 7),
+('Лукманов Радмир', 406, 7),
+('Мулюков Радмир', 406, 7),
+('Назаров Булат', 403, 7),
+('Нуриев Идель', 403, 7),
+('Ризванов Рафаэль', 401, 7),
+('Сафаров Тимур', 402, 7),
+('Фарвазов Ленар', 405, 7),
+('Хажиев Максим', 405, 7),
+('Харисов Дим', 404, 7),
+('Шарафутдинов Денис', 402, 7),
+('Шагизиганов Урал', 401, 7),
+('Абуталипов Айрат', 415, 8),
+('Ахмадеев Айсуак', 427, 8),
+('Ахметшин Газизьян', 414, 8),
+('Габидуллин Ильдус', 425, 8),
+('Галиахметов Денислам', 427, 8),
+('Давлетшин Айназ', 413, 8),
+('Зиянбаев Айса', 428, 8),
+('Исхаков Аяз', 415, 8),
+('Мамбетов Азат', 428, 8),
+('Мустаев Чингиз', 425, 8),
+('Надыргулов Сынгиз', 428, 8),
+('Сагинбаев Артур', 413, 8),
+('Сафин Вильдан', 415, 8),
+('Тагиров Айбулат', 427, 8),
+('Узбеков Шамиль', 426, 8),
+('Усманов Нургиз', 426, 8),
+('Хамидов Мурад', 413, 8),
+('Хисаметдинов Руслан', 425, 8),
+('Худайгулов Азат', 426, 8),
+('Юлдыбаев Аскар', 414, 8),
+('Абдуллин Искандер', 423, 9),
+('Аллаяров Гаян', 424, 9),
+('Баязитов Ильяс', 418, 9),
+('Валитов Азамат', 421, 9),
+('Габитов Айнур', 419, 9),
+('Ильясов Дим', 424, 9),
+('Ишбулатов Газиз', 418, 9),
+('Ишниязов Ренат', 417, 9),
+('Камалетдинов Гаяз', 420, 9),
+('Маликов Ильдар', 424, 9),
+('Мирасов Ямиль', 421, 9),
+('Муратов Зульфат', 420, 9),
+('Сайфуллин Айдар', 422, 9),
+('Ситдиков Рамазан', 417, 9),
+('Сулейманов Айбулат', 417, 9),
+('Сынбулатов Азамат', 423, 9),
+('Хайруллин Вадим', 420, 9),
+('Халимов Айдар', 422, 9),
+('Хусаинов Арслан', 421, 9),
+('Янтурин Нур', 419, 9),
+('Аккужин Филипп', 0, 10),
+('Ахметгараев Ридаль', 0, 10),
+('Галлямов Айнур', 0, 10),
+('Гарипов Азамат', 0, 10),
+('Гильметдинов Ильнур', 0, 10),
+('Зарипов Ильмир', 0, 10),
+('Игликов Аскар', 0, 10),
+('Исхаков Ильгизар', 0, 10),
+('Ишмухаметов Ильнур', 0, 10),
+('Камалов Азат', 0, 10),
+('Канчурин Вильнур', 0, 10),
+('Каримгулов Альберт', 0, 10),
+('Кусарин Эмиль', 0, 10),
+('Кучугулов Салават', 0, 10),
+('Назаров Вильдан', 0, 10),
+('Рафиков Салимьян', 0, 10),
+('Харрасов Зиннур', 0, 10),
+('Шагивалеев Ришат', 0, 10),
+('Шарафутдинов Идель', 0, 10),
+('Юнусов Расуль', 0, 10),
+('Аллабердин Ралиф Раилович', 411, 11),
+('Аслыев Инсаф Ильшатович', 412, 11),
+('Байбулатов Айнур Ильнурович', 225, 11),
+('Басыров Айназ Нажипович', 430, 11),
+('Буляков Нур Зуфарович', 412, 11),
+('Валитов Айрат Мирсаяфович', 412, 11),
+('Габитов Булат Наилевич', 431, 11),
+('Давлетбердин Ялиль Умутбаевич', 409, 11),
+('Зайнуллин Чингиз Ямилевич', 411, 11),
+('Закиров Айдар Альфридович', 429, 11),
+('Ибрагимов Ильяс Римович', 431, 11),
+('Ишкулов Денис Хадисович', 431, 11),
+('Кадыров Амир Ильдарович', 410, 11),
+('Мамбетов Радмир Нурисович', 429, 11),
+('Мулюков Халиль Азатович', 429, 11),
+('Мусаргалин Азат Салаватович', 430, 11),
+('Мухамадиев Ильгиз Азатович', 409, 11),
+('Сафиев Ильяс Филюсович', 430, 11),
+('Сафин Ильдар Наилевич', 410, 11),
+('Умергалин Рузиль Рустамович', 411, 11),
+('Шарипов Рустам Фаритович', 410, 11),
+('Янбаев Ильсур Ильфатович', 409, 11),
+('Абубакиров Шамиль', 0, 12),
+('Аднасурин Ринат', 0, 12),
+('Амантаев Вильдан', 0, 12),
+('Багаутдинов Анвар', 0, 12),
+('Батыршин Байрас', 0, 12),
+('Буранбаев Тимур', 0, 12),
+('Бухарбаев Шагит', 0, 12),
+('Гайфуллин Ильдар', 0, 12),
+('Гайфуллин Рафис', 0, 12),
+('Гизтдинов Данил', 0, 12),
+('Гильманов Ильшат', 0, 12),
+('Кравцов Растимир', 0, 12),
+('Максутов Зиннат', 0, 12),
+('Мирзаев Камран', 0, 12),
+('Рустанов Айгиз', 0, 12),
+('Сагитов Тагир', 0, 12),
+('Сынгизов Расим', 0, 12),
+('Талхин Азамат', 0, 12),
+('Фаизов Ринат', 0, 12),
+('Ягудин Асгат', 0, 12),
+('Адельгужин Азамат Салаватович', 201, 13),
+('Афлятунов Идель Ишмурзович', 201, 13),
+('Байчурин Фаяз Ильгизович', 202, 13),
+('Буранбаев Рамазан Мидкатович', 207, 13),
+('Габдуллин Нияз Илнурович', 205, 13),
+('Давлеткужин Ильсур Газизович', 203, 13),
+('Идрисов Идель Фаилович', 205, 13),
+('Каримов Раиль Раитович', 207, 13),
+('Махатов Ильнур Фларисович', 203, 13),
+('Мигранов Ильнар Радикович', 202, 13),
+('Мугтасимов Ринат Рифович', 206, 13),
+('Мутагиров Рустем Айратович', 204, 13),
+('Насипов Рамиль Камалович', -1, 13),
+('Нуриманов Денис Гаязович', 201, 13),
+('Сафин Чингиз Ильшатович', 206, 13),
+('Хажиев Тимур Айсуатович', 204, 13),
+('Шигапов Радмир Римович', 204, 13),
+('Якупов  Айбулат Уралович', 205, 13),
+('Абдуллин Ильмир Салихович', 218, 14),
+('Адигамов Айгиз Азаматович', 231, 14),
+('Ахмедьяров Азамат', 227, 14),
+('Галин Ильназ', 231, 14),
+('Искужин Шафкат Маратович', 210, 14),
+('Каипов Айтуган Абрикович', 211, 14),
+('Каримов Денис', 209, 14),
+('Кучемханов Батырша', 210, 14),
+('Муратшин Ильмир Ильшатович', 211, 14),
+('Хамидуллин Раушан', 212, 14),
+('Шарипов Анвар Айратович', 210, 14),
+('Шугаипов Шамиль Данилевич', 231, 14),
+('Юлдыбаев Ильнур Рахимьянович', 212, 14),
+('Яхин Вадим Ильфатович', 227, 14),
+('Насиров Айтуган Зуфарович', 211, 14),
+('Сальтяшев Рамай Рауфович', 218, 14),
+('Николаев Денис Анатольевич', 209, 14),
+('Мухаметьянов Айнур Айдарович', 209, 14),
+('Каримов Динислам Нурисламович', 212, 14),
+('Арсланов Тимур', 0, 15),
+('Ахметшин Ильяс', 0, 15),
+('Баймурзин Идель', 0, 15),
+('Басыров Расуль', 0, 15),
+('Валитов Ильдар', 0, 15),
+('Гадельшин Руслан', 0, 15),
+('Давлетчурин Айнур', 0, 15),
+('Ермолаев Роберт', 0, 15),
+('Зайнуллин Загир', 0, 15),
+('Кулуев Рафаэль', 0, 15),
+('Мустафин Ильмир', 0, 15),
+('Мухамадиев Ильнур', 0, 15),
+('Мухамедьянов Азамат', 0, 15),
+('Хидиятов Надир', 0, 15),
+('Хилажев Алик', 0, 15),
+('Шибанов Никита', 0, 15);
