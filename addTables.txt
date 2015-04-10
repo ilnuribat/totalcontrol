@@ -10,6 +10,7 @@ CREATE TABLE students(
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
 name_surname TEXT,
 class INTEGER,
+room INTEGER,
 FOREIGN KEY (class) REFERENCES class(id));
 
 CREATE TABLE control (
