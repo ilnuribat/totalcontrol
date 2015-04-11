@@ -6,7 +6,7 @@ Var.app.get('/listOfClass', function(request, response) {
 	var params = Var.queryString.parse(query);
 	var classid = params['id_class'] - 0;
 	
-	sql.main("SELECT students.id, name_surname AS 'Фамилия Имя', name AS 'класс' FROM students INNER JOIN class ON class.id = students.class AND class.id = '" + classid + "';",
+	sql.main("SELECT students.id, name_surname AS 'name' FROM students INNER JOIN class ON class.id = students.class AND class.id = '" + classid + "';",
 		function(error, rows) {
 			response.send(rows);
 		});
