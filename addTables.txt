@@ -24,6 +24,7 @@ ch_terr INTEGER,
 chkv INTEGER,
 day INTEGER NOT NULL,
 id_student INTEGER,
+UNIQUE KEY studentDay(id_student, day);
 FOREIGN KEY(id_student) REFERENCES students(id)
 );
 
