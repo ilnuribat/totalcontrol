@@ -10,3 +10,7 @@ ON DUPLICATE KEY UPDATE name = VALUES(name);
 
 3) Вывести список классов
 SELECT id, name FROM class;
+
+4) Вывести процентное соотношение в классах по определенной проверке
+SELECT class, (100 * SUM(zrd) / (SELECT COUNT(id) FROM students AS forClass WHERE students.class = forClass.class)) AS 'percentage', day 
+FROM control INNER JOIN students ON id_student = students.id WHERE zrd IS NOT NULL AND day = 16538 GROUP BY class;
