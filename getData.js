@@ -25,3 +25,14 @@ Var.app.get('/listOfRooms', function(request, response) {
 		response.send(rows);
 	});
 });
+
+Var.app.get('/listOfClasses', function(request, response) {
+	sql.main("SELECT id, name FROM class;", function (error, rows) {
+		if(error) {
+			console.log(error);
+			response.send("error!");
+		}
+		//console.log(rows);
+		response.send(rows);
+	});
+});
