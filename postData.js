@@ -1,13 +1,18 @@
 var Var = require('./variables.js');
 var sql = require('./sql.js');
 
-Var.app.post('/otmetka', function(request, response) {
-	var query = Var.url.parse(request.url).query;
-	var params = Var.queryString.parse(query);
-    
+Var.app.post('/marking', function(request, response) {
+	var params = request.body;
 	var typeOfMarking = params['type'];
 	var addingRows = params['data'];
-	var day = new Date.getTime() / (1000 * 60 * 60 * 24);
-	var queryString = "INSERT INTO control(id_student, day)";
-	response.send("otmetka");
+	var sqlQuery = "INSERT INTO control(id_student, day, " + typeOfMarking + ") " + addingRows + 
+		"ON DUPLICATE KEY UPDATE " + typeOfMarking + " = VALUES(" + typeOfMarking + ");";
+	//console.log(sqlQuery);
+	sql.main(sqlQuery, function(error, rows) {
+		if(error) {
+			response.send(error);
+			return;
+		}
+		response.send("successful");
+	});
 });
