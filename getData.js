@@ -36,3 +36,20 @@ Var.app.get('/listOfClasses', function(request, response) {
 		response.send(rows);
 	});
 });
+
+Var.app.get('/dayReport', function(request, response) {
+	var query = Var.url.parse(request.url).query;
+	var params = Var.queryString.parse(query);
+	var day = params['day'];
+	var type = params['type'];
+	sql.main("SELECT class AS 'name', (100 * SUM(" + type + ") / (SELECT COUNT(id) FROM students AS forClass WHERE students.class = forClass.class)) AS 'percentage' " + 
+		"FROM control INNER JOIN students ON id_student = students.id WHERE " + type + " IS NOT NULL AND day = " + day + " GROUP BY class;", 
+		function (error, rows) {
+		if(error) {
+			console.log(error);
+			response.send("error!");
+		}
+		//console.log(rows);
+		response.send(rows);
+	});
+});
