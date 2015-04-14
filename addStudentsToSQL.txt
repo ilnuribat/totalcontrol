@@ -1,4 +1,6 @@
-﻿INSERT INTO students(name_surname, room, class) VALUES
+﻿USE totalcontrol;
+
+INSERT INTO students(name_surname, room, class) VALUES
 ('Абдрахимов Тимур', 526, 1),
 ('Абдуллин Салават', 501, 1),
 ('Батталов Руслан', 530, 1),
