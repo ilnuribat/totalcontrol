@@ -1,4 +1,4 @@
-CREATE DATABASE totalcontrol;
+CREATE DATABASE totalcontrol CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 USE totalcontrol;
 
@@ -8,10 +8,11 @@ name TEXT);
 
 CREATE TABLE students(
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-name_surname TEXT,
+name_surname VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
 class INTEGER,
 room INTEGER,
-FOREIGN KEY (class) REFERENCES class(id));
+FOREIGN KEY (class) REFERENCES class(id)
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 CREATE TABLE control (
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
