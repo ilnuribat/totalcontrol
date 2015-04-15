@@ -1,4 +1,4 @@
-CREATE DATABASE totalcontrol;
+CREATE DATABASE totalcontrol CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 USE totalcontrol;
 
@@ -44,4 +44,3 @@ INSERT INTO class(name) VALUES
 	('11А'),
 	('11Б'),
 	('11В');
-
