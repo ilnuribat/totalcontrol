@@ -5,10 +5,23 @@ Var.app.get('/listOfClass', function(request, response) {
     var query = Var.url.parse(request.url).query;
 	var params = Var.queryString.parse(query);
 	var classid = params['id_class'] - 0;
-	
+	var type = params["type"];
+	var day = params["day"];
 	sql.main("SELECT students.id, name_surname AS 'name' FROM students WHERE class = '" + classid + "';",
-		function(error, rows) {
-			response.send(rows);
+		function(error, classList) {
+			sql.main("SELECT " + type + " AS 'type' FROM control INNER JOIN students ON students.id = id_student " +
+			"AND class = " + classid + " AND day = " + day + ";", function(error, rows) {
+				var fullList = [];
+				for(var i = 0; i < classList.length; i ++) {
+					var element = {
+						"name": classList[i]["name"],
+						"id": classList[i]["id"],
+						"marked": rows.length > 0 ? (rows[i]["type"] == null ? "0" : rows[i]["type"]) : "0"
+					}
+					fullList.push(element);
+				}
+				response.send(fullList);
+			});
 		});
 });
 
