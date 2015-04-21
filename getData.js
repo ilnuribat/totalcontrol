@@ -7,6 +7,7 @@ Var.app.get('/listOfClass', function(request, response) {
 	var classid = params['id_class'] - 0;
 	var type = params["type"];
 	var day = params["day"];
+	
 	sql.main("SELECT students.id, name_surname AS 'name' FROM students WHERE class = '" + classid + "';",
 		function(error, classList) {
 			sql.main("SELECT " + type + " AS 'type' FROM control INNER JOIN students ON students.id = id_student " +
@@ -29,23 +30,21 @@ Var.app.get('/listOfRooms', function(request, response) {
 	var query = Var.url.parse(request.url).query;
 	var params = Var.queryString.parse(query);
 	var classid = params['id_class'] - 0;
-	sql.main("SELECT room AS 'id', room AS 'name' FROM students WHERE class = " + classid + " AND room > 0 GROUP BY room;", function (error, rows) {
+	sql.main("SELECT room AS 'id', room AS 'name', 0 AS 'marked' FROM students WHERE class = " + classid + " AND room > 0 GROUP BY room;", function (error, rows) {
 		if(error) {
 			console.log(error);
 			response.send("error!");
 		}
-		//console.log(rows);
 		response.send(rows);
 	});
 });
 
 Var.app.get('/listOfClasses', function(request, response) {
-	sql.main("SELECT id, name FROM class;", function (error, rows) {
+	sql.main("SELECT id, name, 0 AS 'marked' FROM class;", function (error, rows) {
 		if(error) {
 			console.log(error);
 			response.send("error!");
 		}
-		//console.log(rows);
 		response.send(rows);
 	});
 });
