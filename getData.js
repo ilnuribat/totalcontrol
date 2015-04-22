@@ -54,11 +54,13 @@ Var.app.get('/dayReport', function(request, response) {
 	var params = Var.queryString.parse(query);
 	var day = params['day'];
 	var type = params['type'];
-	sql.main("SELECT class AS 'name', (100 * SUM(" + type + ") / (SELECT COUNT(id) FROM students AS forClass WHERE students.class = forClass.class)) AS 'percentage' " + 
-		"FROM control INNER JOIN students ON id_student = students.id WHERE " + type + " IS NOT NULL AND day = " + day + " GROUP BY class;", 
+	sql.main("SELECT class.name AS 'name', (100 * SUM(" + type + ") / (SELECT COUNT(id) FROM students AS forClass WHERE students.class = forClass.class)) " + 
+		"AS 'percentage' FROM control INNER JOIN students ON id_student = students.id INNER JOIN class ON students.class = class.id WHERE " + 
+		type + " IS NOT NULL AND day = " + day + " GROUP BY class.name;", 
 		function (error, rows) {
 		if(error) {
 			console.log(error);
+			
 			response.send("error!");
 		}
 		//console.log(rows);
