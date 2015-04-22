@@ -8,8 +8,10 @@ var url = require('url');
 app.use(bodyParser.urlencoded());
 var mysql = require('mysql');
 var queryString = require('querystring');
+var FS = require('fs');
 
 exports.app = app;
 exports.mysql = mysql;
 exports.url = url;
 exports.queryString = queryString;
+exports.FS = FS;
