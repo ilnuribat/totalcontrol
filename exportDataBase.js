@@ -10,7 +10,6 @@ function exportDB() {
     sql.main(sqlQuery, function (error, rows) {
         var conf = {};
         conf.cols = [{
-                caption: rows[0]["class"],
                 type: 'string',
                 width: 25
             }, {
@@ -69,7 +68,7 @@ function exportDB() {
 
         conf.rows = fullArray;
         var result = nodeExcel.execute(conf);
-        Var.FS.writeFileSync('export.xlsx', result, 'binary');
+        Var.FS.writeFileSync('export.xls', result, 'binary', 'utf8');
         console.log("written");
     });
     
