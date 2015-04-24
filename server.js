@@ -1,6 +1,5 @@
 var Var = require('./variables.js');
 require('./postData.js');
-require('./exportDataBase.js');
 require('./getData.js');
 require('./init.js');
 
