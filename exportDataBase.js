@@ -2,6 +2,8 @@ var Var = require('./variables.js');
 var sql = require('./sql.js');
 var nodeExcel = require('excel-export');
 
+console.log("export started!");
+
 function exportDB() {
     var sqlQuery = "SELECT name_surname AS 'name', class.name AS 'class', SUM(1 - zrd) AS 'zrd', SUM(chku) AS 'chku', SUM(opozdal) AS 'opozdal', " + 
         "SUM(vnesh_vid) AS 'vnesh_vid', SUM(sampod) AS 'sampod', SUM(ch_terr) AS 'ch_terr', SUM(chkv) AS 'chkv' FROM control " + 
@@ -10,6 +12,7 @@ function exportDB() {
     sql.main(sqlQuery, function (error, rows) {
         var conf = {};
         conf.cols = [{
+                caption: 'name',//Var.rTitles["name"],
                 type: 'string',
                 width: 25
             }, {
@@ -69,9 +72,10 @@ function exportDB() {
         conf.rows = fullArray;
         var result = nodeExcel.execute(conf);
         Var.FS.writeFileSync('export.xls', result, 'binary', 'utf8');
-        console.log("written");
+        console.log("exportDataBase.js: written");
+        setTimeout(exportDB, 1000);// * 60 * 2);
     });
     
 }
 
-setTimeout(exportDB(), 1000 * 60 * 2);
+exports.DB = exportDB();
