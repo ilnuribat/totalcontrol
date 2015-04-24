@@ -30,6 +30,7 @@ FOREIGN KEY(id_student) REFERENCES students(id)
 
 CREATE TABLE utf8Titles(
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+name TEXT,
 zrd TEXT,
 chku TEXT,
 opozdal TEXT,
@@ -37,11 +38,12 @@ vnesh_vid TEXT,
 sampod TEXT,
 ch_terr TEXT,
 chkv TEXT,
-penalty TEXT
+penalty TEXT,
+report TEXT
 );
 
-INSERT INTO utf8Titles(zrd, chku, opozdal, vnesh_vid, sampod, ch_terr, chkv, penalty)
-VALUES('Зарядка','Чистота комнат Утром','Опаздания','Внешний вид','Самоподготовка','Чистота территории','Чистота комнат вечером','Штраф');
+INSERT INTO utf8Titles(name, zrd, chku, opozdal, vnesh_vid, sampod, ch_terr, chkv, penalty, report)
+VALUES('Фамилия Имя','Зарядка','Чистота комнат Утром','Опаздания','Внешний вид','Самоподготовка','Чистота территории','Чистота комнат вечером','Штраф', 'Отчёт.xlsx');
 
 INSERT INTO class(name) VALUES
 	('7А'),
