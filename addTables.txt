@@ -39,10 +39,10 @@ sampod TEXT,
 ch_terr TEXT,
 chkv TEXT,
 penalty TEXT,
-report TEXT
+report_ind TEXT
 );
 
-INSERT INTO utf8Titles(name, zrd, chku, opozdal, vnesh_vid, sampod, ch_terr, chkv, penalty, report)
+INSERT INTO utf8Titles(name, zrd, chku, opozdal, vnesh_vid, sampod, ch_terr, chkv, penalty, report_ind)
 VALUES('Фамилия Имя','Зарядка','Чистота комнат Утром','Опаздания','Внешний вид','Самоподготовка','Чистота территории','Чистота комнат вечером','Штраф', 'Итоги Индивидуально.xlsx');
 
 INSERT INTO class(name) VALUES
