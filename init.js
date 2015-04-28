@@ -11,8 +11,8 @@ sql.main("SELECT name, zrd, chku, opozdal, vnesh_vid, sampod, ch_terr, chkv, pen
     Var.rTitles["ch_terr"] = row[0]["ch_terr"];
     Var.rTitles["chkv"] = row[0]["chkv"];
     Var.rTitles["penalty"] = row[0]["penalty"];
-    Var.rTitles["report"] = row[0]["report"];
+    Var.rTitles["report_ind"] = row[0]["report_ind"];
 
     //console.log("init.js:", Var.rTitles);
-    require('./exportDataBase.js').DB;
+    require('./exportDataBase.js');
 });
