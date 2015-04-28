@@ -2,7 +2,7 @@ var Var = require('./variables.js');
 var sql = require('./sql.js');
 var nodeExcel = require('excel-export');
 
-function exportDB() {
+function report_ind() {
     var sqlQuery = "SELECT name_surname AS 'name', class.name AS 'class', SUM(1 - zrd) AS 'zrd', SUM(chku) AS 'chku', SUM(opozdal) AS 'opozdal', " + 
         "SUM(vnesh_vid) AS 'vnesh_vid', SUM(sampod) AS 'sampod', SUM(ch_terr) AS 'ch_terr', SUM(chkv) AS 'chkv' FROM control " + 
         "INNER JOIN students ON students.id = id_student INNER JOIN class ON class.id = students.class " + 
@@ -24,19 +24,19 @@ function exportDB() {
             }, {
                 caption: Var.rTitles["opozdal"],
                 type: 'string',
-                width: 10
+                width: 15
             }, {
                 caption: Var.rTitles["vnesh_vid"],
                 type: 'string',
-                width: 10
+                width: 15
             }, {
                 caption: Var.rTitles["sampod"],
                 type: 'string',
-                width: 10
+                width: 16
             }, {
                 caption: Var.rTitles["ch_terr"],
                 type: 'string',
-                width: 15
+                width: 19
             }, {
                 caption: Var.rTitles["chkv"],
                 type: 'string',
@@ -44,7 +44,7 @@ function exportDB() {
             }, {
                 caption: Var.rTitles["penalty"],
                 type: 'string',
-                width: 5
+                width: 7
             }];
         
         var fullArray = [];
@@ -78,11 +78,11 @@ function exportDB() {
 
         conf.rows = fullArray;
         var result = nodeExcel.execute(conf);
-        Var.FS.writeFileSync(Var.rTitles["report"], result, 'binary', 'utf8');
-        console.log("exportDataBase.js: written");
-        setTimeout(exportDB, 1000);// * 60 * 2);
+        Var.FS.writeFileSync(Var.rTitles["report_ind"] + '.xlsx', result, 'binary', 'utf8');
+       
+         //setTimeout(exportDB, 1000);// * 60 * 2);
     });
     
 }
 
-exports.DB = exportDB();
+report_ind();
