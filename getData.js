@@ -13,11 +13,13 @@ Var.app.get('/listOfClass', function(request, response) {
 			sql.main("SELECT " + type + " AS 'type' FROM control INNER JOIN students ON students.id = id_student " +
 			"AND class = " + classid + " AND day = " + day + ";", function(error, rows) {
 				var fullList = [];
+				console.log(classList);
 				for(var i = 0; i < classList.length; i ++) {
 					var element = {
 						"name": classList[i]["name"],
 						"id": classList[i]["id"],
-						"marked": rows.length > 0 ? (rows[i]["type"] == null ? "0" : rows[i]["type"]) : "0"
+						"marked": "0"
+						//rows.length > 0 ? (rows[i]["type"] == null ? "0" : rows[i]["type"]) : "0"
 					}
 					fullList.push(element);
 				}
