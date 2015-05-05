@@ -14,5 +14,6 @@ Var.app.post('/marking', function(request, response) {
 			return;
 		}
 		response.send("successful");
+		console.log("successful");
 	});
 });

@@ -13,7 +13,7 @@ Var.app.get('/listOfClass', function(request, response) {
 			sql.main("SELECT " + type + " AS 'type' FROM control INNER JOIN students ON students.id = id_student " +
 			"AND class = " + classid + " AND day = " + day + ";", function(error, rows) {
 				var fullList = [];
-				console.log(classList);
+				
 				for(var i = 0; i < classList.length; i ++) {
 					var element = {
 						"name": classList[i]["name"],
@@ -23,6 +23,7 @@ Var.app.get('/listOfClass', function(request, response) {
 					}
 					fullList.push(element);
 				}
+				console.log(fullList);
 				response.send(fullList);
 			});
 		});
