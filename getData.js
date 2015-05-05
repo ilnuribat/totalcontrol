@@ -63,7 +63,7 @@ Var.app.get('/dayReport', function(request, response) {
 			
 			response.send("error!");
 		}
-		//console.log(rows);
+		console.log('send');
 		response.send(rows);
 	});
 });

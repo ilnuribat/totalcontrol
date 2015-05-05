@@ -85,4 +85,8 @@ function report_ind() {
     
 }
 
+function report() {
+
+}
+
 report_ind();
