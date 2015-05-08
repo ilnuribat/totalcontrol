@@ -1,4 +1,5 @@
-﻿CREATE DATABASE totalcontrol CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+﻿DROP DATABASE totalcontrol;
+CREATE DATABASE totalcontrol CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 USE totalcontrol;
 
