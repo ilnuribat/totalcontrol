@@ -70,3 +70,10 @@ Var.app.get('/dayReport', function(request, response) {
 		response.send(rows);
 	});
 });
+
+Var.app.get('/classTitles', function(request, response) {
+	var sqlQuery = 'SELECT name FROM class';
+	sql.main(sqlQuery, function(error, rows) {
+		response.send(rows);
+	});
+});
