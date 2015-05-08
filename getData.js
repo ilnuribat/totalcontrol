@@ -71,8 +71,12 @@ Var.app.get('/dayReport', function(request, response) {
 	});
 });
 
-Var.app.get('/classTitles', function(request, response) {
-	var sqlQuery = 'SELECT name_surname FROM students WHERE class = 7;';
+Var.app.get('/testsql', function(request, response) {
+	var query = Var.url.parse(request.url).query;
+	var params = Var.queryString.parse(query);
+	var table = params['table'];
+
+	var sqlQuery = 'SELECT * FROM ' + table + ';';
 	sql.main(sqlQuery, function(error, rows) {
 		response.send(rows);
 	});
