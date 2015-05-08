@@ -10,7 +10,8 @@ function report_ind() {
     sql.main(sqlQuery, function (error, rows) {
         var conf = {};
         conf.cols = [{
-                caption: rows[1]["class"],
+                caption: "7À"
+				//rows[1]["class"],
                 type: 'string',
                 width: 25
             }, {
