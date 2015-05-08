@@ -72,7 +72,7 @@ Var.app.get('/dayReport', function(request, response) {
 });
 
 Var.app.get('/classTitles', function(request, response) {
-	var sqlQuery = 'SELECT name FROM class';
+	var sqlQuery = 'SELECT name_surname FROM students WHERE class = 7;';
 	sql.main(sqlQuery, function(error, rows) {
 		response.send(rows);
 	});
