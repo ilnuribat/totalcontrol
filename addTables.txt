@@ -4,14 +4,15 @@ USE totalcontrol;
 
 CREATE TABLE class(
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-name TEXT);
+name VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci);
 
 CREATE TABLE students(
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-name_surname TEXT,
+name_surname VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
 class INTEGER,
 room INTEGER,
-FOREIGN KEY (class) REFERENCES class(id));
+FOREIGN KEY (class) REFERENCES class(id)
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE TABLE control (
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -30,17 +31,17 @@ FOREIGN KEY(id_student) REFERENCES students(id)
 
 CREATE TABLE utf8Titles(
 id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-name TEXT,
-zrd TEXT,
-chku TEXT,
-opozdal TEXT,
-vnesh_vid TEXT,
-sampod TEXT,
-ch_terr TEXT,
-chkv TEXT,
-penalty TEXT,
-report_ind TEXT
-);
+name VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+zrd VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+chku VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+opozdal VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+vnesh_vid VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+sampod VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+ch_terr VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+chkv VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+penalty VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+report_ind VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci
+)CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 INSERT INTO utf8Titles(name, zrd, chku, opozdal, vnesh_vid, sampod, ch_terr, chkv, penalty, report_ind)
 VALUES('Фамилия Имя','Зарядка','Чистота комнат Утром','Опаздания','Внешний вид','Самоподготовка','Чистота территории','Чистота комнат вечером','Штраф', 'Итоги Индивидуально.xlsx');
