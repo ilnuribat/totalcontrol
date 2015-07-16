@@ -23,5 +23,5 @@ Var.app.post('/auth', function(request, response) {
 			return;
 		}
 		response.send(JSON.stringify(rows[0]));
-	}
-})
+	});
+});
