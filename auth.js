@@ -5,9 +5,8 @@ Var.app.post('/auth', function(request, response) {
 	var params = request.body;
 	var login = params['login'];
 	var password = params['password'];
-	var sqlQuery = 'SELECT name_lastname, position FROM staff WHERE login = "' + login + '" AND password = "' +
+	var sqlQuery = 'SELECT id, name_lastname, position FROM staff WHERE login = "' + login + '" AND password = "' +
 		password + '";';
-	console.log(sqlQuery);
 	sql.main(sqlQuery, function(error, rows) {
 		if(error) {
 			console.log(new Date().toLocaleString(), "/auth\t error", error);
@@ -18,12 +17,16 @@ Var.app.post('/auth', function(request, response) {
 			response.send("Логин или пароль введены не верно");
 			return;
 		}
-
 		if(rows.length > 1) {
 			console.log(new Date().toLocaleString(), "auth\t more than 1 identical users");
 			response.send("не уникальный пользователь");
 			return;
 		}
-		response.send(JSON.stringify(rows[0]));
+		var ans = {
+			id: rows[0].id,
+			name_lastname: rows[0].name_lastname,
+			position: rows[0].position
+		}
+		response.send(JSON.stringify(ans));
 	});
 });
