@@ -5,8 +5,8 @@ Var.app.post('/auth', function(request, response) {
 	var params = request.body;
 	var login = params['login'];
 	var password = params['password'];
-	var sqlQuery = 'SELECT name_lastname, position FROM staff WHERE login = ' + login + ' AND password = ' +
-		password + ';';
+	var sqlQuery = 'SELECT name_lastname, position FROM staff WHERE login = "' + login + '" AND password = "' +
+		password + '";';
 	console.log(sqlQuery);
 	sql.main(sqlQuery, function(error, rows) {
 		if(error) {
