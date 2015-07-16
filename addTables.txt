@@ -5,11 +5,11 @@ USE totalcontrol;
 
 CREATE TABLE class(
 	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	name VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci);
+	name TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci);
 
 CREATE TABLE students(
 	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	name_surname VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+	name_surname TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci,
 	class INTEGER,
 	room INTEGER,
 	FOREIGN KEY (class) REFERENCES class(id)
@@ -27,10 +27,10 @@ CREATE TABLE control (
 
 CREATE TABLE staff (
 	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-	name_lastname VARCHAR(60) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-	login VARCHAR(30),
-	password VARCHAR(40),
-	position VARCHAR(60)
+	name_lastname TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+	login TEXT,
+	password TEXT,
+	position TEXT
 );
 
 INSERT INTO staff(name_lastname, login, password, position)
