@@ -23,7 +23,6 @@ Var.app.get('/listOfClass', function(request, response) {
 					}
 					fullList.push(element);
 				}
-				console.log(fullList);
 				response.send(fullList);
 			});
 		});
