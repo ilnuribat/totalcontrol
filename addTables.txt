@@ -4,48 +4,37 @@ CREATE DATABASE totalcontrol CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE totalcontrol;
 
 CREATE TABLE class(
-id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-name VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci);
+	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	name VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci);
 
 CREATE TABLE students(
-id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-name_surname VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-class INTEGER,
-room INTEGER,
-FOREIGN KEY (class) REFERENCES class(id)
-)CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-CREATE TABLE control (
-id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-zrd INTEGER,
-chku INTEGER,
-opozdal INTEGER,
-vnesh_vid INTEGER,
-sampod INTEGER,
-ch_terr INTEGER,
-chkv INTEGER,
-day INTEGER NOT NULL,
-id_student INTEGER,
-UNIQUE KEY studentDay(id_student, day),
-FOREIGN KEY(id_student) REFERENCES students(id)
+	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	name_surname VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+	class INTEGER,
+	room INTEGER,
+	FOREIGN KEY (class) REFERENCES class(id)
 );
 
-CREATE TABLE utf8Titles(
-id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
-name VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-zrd VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-chku VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-opozdal VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-vnesh_vid VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-sampod VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-ch_terr VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-chkv VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-penalty VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
-report_ind VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci
-)CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE TABLE control (
+	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	zrd INTEGER,
+	opozdal INTEGER,
+	day DATE NOT NULL,
+	id_student INTEGER,
+	UNIQUE KEY studentDay(id_student, day),
+	FOREIGN KEY(id_student) REFERENCES students(id)
+);
 
-INSERT INTO utf8Titles(name, zrd, chku, opozdal, vnesh_vid, sampod, ch_terr, chkv, penalty, report_ind)
-VALUES('Фамилия Имя','Зарядка','Чистота комнат Утром','Опаздания','Внешний вид','Самоподготовка','Чистота территории','Чистота комнат вечером','Штраф', 'Итоги Индивидуально.xlsx');
+CREATE TABLE staff (
+	id INTEGER AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	name_lastname VARCHAR(60) CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+	login VARCHAR(30),
+	password VARCHAR(40),
+	position VARCHAR(60)
+);
+
+INSERT INTO staff(name_lastname, login, password, position)
+VALUES("Ильнур Тимерьярович", "ilnur", "1", "Ночной помощник воспитателя");
 
 INSERT INTO class(name) VALUES
 	('7А'),
