@@ -7,9 +7,11 @@ Var.app.post('/auth', function(request, response) {
 	var password = params['password'];
 	var sqlQuery = 'SELECT name_lastname, position FROM staff WHERE login = ' + login + ' AND password = ' +
 		password + ';';
+	console.log(sqlQuery);
 	sql.main(sqlQuery, function(error, rows) {
 		if(error) {
 			console.log(new Date().toLocaleString(), "/auth\t error", error);
+			response.send('the DB error', error);
 			return;
 		}
 		if(rows.length == 0) {
