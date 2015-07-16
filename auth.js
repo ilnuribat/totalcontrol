@@ -27,6 +27,7 @@ Var.app.post('/auth', function(request, response) {
 			name_lastname: rows[0].name_lastname,
 			position: rows[0].position
 		}
+		console.log(ans);
 		response.send(JSON.stringify(ans));
 	});
 });
