@@ -29,7 +29,7 @@ Var.app.post('/auth', function(request, response) {
 		}
 		var ansStr = JSON.stringify(ans);
 		var ansUTF8 = unescape(encodeURIComponent(ansStr));
-		console.log(ansStr + "\n" + ansUTF8);
-		response.send(ansStr + ansUTF8);
+		console.log(ans);
+		response.send(ans);
 	});
 });
