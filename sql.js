@@ -5,7 +5,7 @@ var sqlData;
 var main = function (query, callback) {
   connectionSQL = Var.mysql.createConnection( {
     host: 'localhost', 
-    port: 3306,
+    port: 3307,
     database: 'totalcontrol',
     user: 'root', 
     password: '1234'
