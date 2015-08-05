@@ -2,12 +2,14 @@ var Var = require('./variables.js');
 var sql = require('./sql.js');
 
 Var.app.post('/auth', function(request, response) {
+	console.log("!");
 	var params = request.body;
 	var login = params['login'];
 	var password = params['password'];
 	var sqlQuery = 'SELECT id, name_lastname, position FROM staff WHERE login = "' + login + '" AND password = "' +
 		password + '";';
 	sql.main(sqlQuery, function(error, rows) {
+		console.log(rows);
 		if(error) {
 			console.log(new Date().toLocaleString(), "/auth\t error", error);
 			response.send('the DB error', error);
