@@ -70,7 +70,7 @@ Var.app.get('/dayReport', function(request, response) {
 	});
 });
 
-Var.app.get('/testsql', function(request, response) {
+Var.app.get('/testsql', function (request, response) {
 	var query = Var.url.parse(request.url).query;
 	var params = Var.queryString.parse(query);
 	var table = params['table'];

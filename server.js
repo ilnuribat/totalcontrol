@@ -4,5 +4,5 @@ require('./getData.js');
 require('./init.js');
 require('./auth.js');
 
-Var.app.listen(80);
-console.log("Server стартанул");
+Var.app.listen(Var.port);
+console.log("Server listeing " + Var.port + " port");
